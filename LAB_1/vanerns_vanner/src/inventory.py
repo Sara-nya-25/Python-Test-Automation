@@ -7,7 +7,7 @@ class Item:
 
 class Inventory:
     def __init__(self):
-        self.items = []
+        self.items = {}
 
     def set_item(self, name, rent_price, amount):
         self.items[name] = Item(name, rent_price, amount)
