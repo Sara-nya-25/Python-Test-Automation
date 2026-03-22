@@ -82,4 +82,16 @@ PASSED tests/integration/test_bank_transactions.py::test_deposit_logging
 PASSED tests/integration/test_bank_transactions.py::test_withdraw_insufficient_funds_logging
 PASSED tests/integration/test_bank_transactions.py::test_transfer_integration_logging
 ================================================================================ 3 passed in 0.04s =========
+================================================================================= tests coverage ==================================================================================
+_________________________________________________________________ coverage: platform win32, python 3.14.0-final-0 _________________________________________________________________
+
+Name                  Stmts   Miss  Cover
+-----------------------------------------
+src\__init__.py           0      0   100%
+src\bank_account.py      15      0   100%
+src\logger.py             3      0   100%
+src\transaction.py        7      0   100%
+-----------------------------------------
+TOTAL                    25      0   100%
+================================================================================ 4 passed in 0.42s ================================================================================
 """
