@@ -5,6 +5,7 @@ A lightweight Python-based membership and event management system. This project 
 The project follows a standard src/ layout to ensure clean imports and professional testing patterns.
 ```
 Event_Register/       # Project metadata and pytest configuration
+├── pyproject.toml      # project metadata and pytest configuration
 ├── conftest.py          # Root marker for path discovery
 ├── src/
 │   └── membership.py    # Core Logic (Event & MemberService classes)
