@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "event-register"
+version = "0.1.0"
+description = "A club membership and event registration system"
+authors = [{name = "Your Name", email = "your.email@example.com"}]
+dependencies = [
+    "pytest",
+    "pytest-mock",
+]
+
+[tool.pytest.ini_options]
+# 1. Fixes 'Unresolved Reference' by adding src to the path
+pythonpath = ["src"]
+
+# 2. Tells pytest where to look for tests
+testpaths = ["tests"]
+
+# 3. Standard flags:
+# -ra: show extra test summary info
+# -q: quiet mode (less clutter)
+addopts = "-ra -q"
