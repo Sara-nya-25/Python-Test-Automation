@@ -48,6 +48,21 @@ def test_transfer_integration_logging(bank_setup):
     # Check the second call (Deposit)
     assert spy_log.call_args_list[1].args[0] == "deposit: 300 kr, balance 800 kr"
 
+
+def test_failed_transfer_integration(bank_setup):
+    """Ensures no money moves and error is logged if funds are low."""
+    alice, bob, spy_log= bank_setup
+
+    # Action: Try to transfer more than Alice has
+    success = Transaction.transfer(5000, alice, bob)
+
+    assert success is False
+    assert alice.balance == 1000  # Unchanged
+    assert bob.balance == 500  # Unchanged
+
+    # Check that the failure message was sent to logger
+    spy_log.assert_called_with("withdraw: could not withdraw 5000 kr from account")
+
 """
 tests\\integration\\test_bank_transactions.py ...                                                                                                                              [100%]
 
