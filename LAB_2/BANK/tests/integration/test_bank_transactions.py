@@ -3,7 +3,8 @@ from logger import Logger
 from bank_account import BankAccount
 from transaction import Transaction
 
-
+# Mark the whole file
+pytestmark = pytest.mark.integration
 @pytest.fixture
 def bank_setup(mocker):
     logger = Logger()
@@ -48,7 +49,7 @@ def test_transfer_integration_logging(bank_setup):
     assert spy_log.call_args_list[1].args[0] == "deposit: 300 kr, balance 800 kr"
 
 """
-tests\integration\test_bank_transactions.py ...                                                                                                                              [100%]
+tests\\integration\\test_bank_transactions.py ...                                                                                                                              [100%]
 
 ===================================================================================== PASSES ======================================================================================
 ______________________________________________________________________________ test_deposit_logging _______________________________________________________________________________
