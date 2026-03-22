@@ -1,6 +1,7 @@
 import pytest
 from src.membership import Event, MemberService
 
+print(dir(MemberService))
 # --- FIXTURES (Local to this file) ---
 @pytest.fixture
 def member_service():
