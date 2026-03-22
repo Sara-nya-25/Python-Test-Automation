@@ -1,6 +1,6 @@
 import pytest
-from src.inventory import Inventory, InventoryItem
-from src.shopping_cart import ShoppingCart
+from inventory import Inventory, InventoryItem
+from shopping_cart import ShoppingCart
 
 
 @pytest.fixture
