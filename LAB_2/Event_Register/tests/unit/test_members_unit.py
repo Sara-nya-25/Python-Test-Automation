@@ -1,7 +1,9 @@
 import pytest
 from src.membership import Event, MemberService
 
-print(dir(MemberService))
+# Mark all tests in this file as unit tests
+pytestmark = pytest.mark.unit
+print(dir(MemberService)) # prints available classes
 # --- FIXTURES (Local to this file) ---
 @pytest.fixture
 def member_service():

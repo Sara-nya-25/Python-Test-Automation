@@ -1,6 +1,7 @@
 import pytest
-from src.membership import Event, MemberService
+from membership import Event, MemberService
 
+pytestmark = pytest.mark.integration
 # --- FIXTURES (Local to this file) ---
 @pytest.fixture
 def registration_setup():
@@ -11,6 +12,7 @@ def registration_setup():
     }
 
 # --- INTEGRATION TESTS ---
+@pytest.mark.integration
 def test_register_new_member_flow(registration_setup):
     """
     Verifies that register_new_member updates BOTH

@@ -2,7 +2,7 @@ import pytest
 from inventory import Inventory, InventoryItem
 from shopping_cart import ShoppingCart
 
-
+pytestmark = pytest.mark.integration
 @pytest.fixture
 def store_setup():
     """Sets up a fresh inventory and an empty cart."""
