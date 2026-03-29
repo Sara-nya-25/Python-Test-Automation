@@ -19,14 +19,19 @@ back together in a sorted manner.
 Merge_sort/
 ├── src/
 │   ├── __init__.py
-│   └── merge_sort.py          # Core recursive algorithm
+│   └── bubble_sort.py          # Core recursive algorithms
+│   └── insertion_sort.py
+│   └── merge_sort.py
+│   └── quick_sort.py
 ├── tests/
 │   ├── unit/
 │   │   └── test_merge_sort.py  # Functional & edge case tests
 │   └── performance/
-│       ├── test_performance.py # Benchmarking & plotting
-│       └── merge_performance.png
-├── requirements.txt           # Dependencies (pytest, matplotlib)
+│       ├── test_merge_performance.py     # Benchmarking & plotting
+│       └── test_performance_all_sorts.py
+│       └── all_sorts_comparison.png      # all sorts comparison graph
+│       └── comparison_graph.png          # merge and insertion sort comparison
+├── requirements.txt               # Dependencies (pytest, matplotlib)
 └── README.md
 ```
 
