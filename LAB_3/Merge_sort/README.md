@@ -44,11 +44,12 @@ pytest tests/performance/test_performance.py -s
 
 ### 📈 Complexity Analysis
 
-| Algorithm | Time Complexity | Best Case  | Average Case | Worst Case |
-| :--- |:----------------|:-----------|:-------------|:---------------|
-| Insertion Sort | O(n^2)          | O(n)       | O(n^2)     | O(n^2)    |
-| Merge Sort | O(n log n)      | O(n log n) | O(n log n)    | O(n log n)   |  
-
+| Algorithm      | Space Complexity | Best case  | Average Case | Worst Case |
+|:---------------|:-----------------|:-----------|:-------------|:---------------|
+| Insertion Sort | O(1)             | O(n)       | O(n^2)       | O(n^2)    |
+| Merge Sort     | O(n)             | O(n log n) | O(n log n)   | O(n log n)   |  
+| Bubble Sort    | O(1)             | O(n)       | O(n^2)       | O(n^2)    |
+| Quick Sort     | O(n log n)       | O(n log n) | O(n log n)   | O(n^2)    |
 ### 🖼️ Results
 The following graph demonstrates the efficiency of the algorithm as the input size n increases:
 Growth pattern is Quadratic for Insertion sort and Linear logarithmic for merge sort

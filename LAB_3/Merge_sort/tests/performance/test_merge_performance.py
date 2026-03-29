@@ -31,7 +31,7 @@ def test_compare_algorithms():
     # Plotting
     plt.figure(figsize=(10, 6))
     plt.plot(sizes, insertion_times, label='Insertion Sort (O(n^2))', marker='o')
-    plt.plot(sizes, merge_times, label='Merge Sort (O(n \log n))', marker='s')
+    plt.plot(sizes, merge_times, label='Merge Sort (O(n log n))', marker='s')
     plt.title('Performance Comparison: Insertion vs. Merge Sort')
     plt.xlabel('List Size (n)')
     plt.ylabel('Execution Time (ms)')
