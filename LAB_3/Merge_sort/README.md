@@ -1,7 +1,9 @@
-## Merge Sort Analysis & Comparison
+## Merge Sort and ALL sorts Analysis & Comparison
 This project implements the Merge Sort algorithm, a highly efficient 
 "Divide and Conquer" sorting method. It includes unit tests for correctness 
-and performance benchmarks to verify its O(n \log n) time complexity.
+and performance benchmarks to verify its O(n \log n) time complexity. It also includes 
+bubble and quick sort algorithms, measures and compares their performance with other 
+sorting algorithms.
 
 ### 🧠 How it Works
 
