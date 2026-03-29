@@ -54,3 +54,4 @@ pytest tests/performance/test_performance.py -s
 The following graph demonstrates the efficiency of the algorithm as the input size n increases:
 Growth pattern is Quadratic for Insertion sort and Linear logarithmic for merge sort
 ![Merge Sort Performance](tests/performance/comparison_graph.png)
+![All sorts comparison graph](tests/performance/all_sorts_comparison.png)
