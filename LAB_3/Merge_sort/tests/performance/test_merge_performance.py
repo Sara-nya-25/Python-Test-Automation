@@ -39,7 +39,7 @@ def test_compare_algorithms():
     plt.grid(True)
 
     # Using 'r' to prevent the unicode error
-    plt.savefig(r"tests/performance/comparison_graph.png")
+    plt.savefig("comparison_graph.png")
     plt.show()
 
 

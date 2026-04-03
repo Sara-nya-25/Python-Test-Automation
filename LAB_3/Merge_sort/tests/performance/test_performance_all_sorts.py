@@ -50,7 +50,7 @@ def test_run_benchmarks():
     plt.grid(True, which="both", ls="-", alpha=0.5)
 
     # Use 'r' to avoid unicode escape errors on Windows
-    plt.savefig(r"tests/performance/all_sorts_comparison.png")
+    plt.savefig("all_sorts_comparison.png")
     plt.show()
 
 
