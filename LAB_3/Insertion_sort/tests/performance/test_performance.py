@@ -74,6 +74,6 @@ Running scaling benchmarks...
   n=2000 | t=152.42 ms
   n=2500 | t=239.01 ms
   n=3000 | t=343.61 ms
-Graph saved to: performance_graph.png
+Graph saved to: 0p      erformance_graph.png
 PASSED
 """
