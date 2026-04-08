@@ -1,24 +1,24 @@
-name: LAB_4 CI Pipeline
+name: 04_Linting_Benchmark CI Pipeline
 
 on:
   push:
     branches: [ main ]
-    # Only trigger if files in LAB_4 change
+    # Updated path to watch for changes in the renamed folder
     paths:
-      - 'LAB_4/**'
+      - '04_linting_benchmark/**'
   pull_request:
     branches: [ main ]
     paths:
-      - 'LAB_4/**'
+      - '04_linting_benchmark/**'
 
 jobs:
   test-lab-4:
     runs-on: ubuntu-latest
 
-    # This tells GitHub to run all 'run' commands inside the LAB_4 folder
+    # This tells GitHub to run all commands inside the new folder name
     defaults:
       run:
-        working-directory: ./LAB_4
+        working-directory: ./04_linting_benchmark
 
     steps:
     - name: Checkout code
@@ -39,3 +39,7 @@ jobs:
 
     - name: Run Integration Tests
       run: pytest -m integration
+
+    # Optional: Since we set up Pylint, it's a great idea to add a linting step here!
+    - name: Run Linting
+      run: pylint src/ tests/
