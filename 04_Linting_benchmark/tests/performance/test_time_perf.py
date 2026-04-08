@@ -3,7 +3,7 @@ import time
 from src.algorithms.prime import is_prime, get_primes
 
 @pytest.mark.performance
-def test__get_primes__benchmark():
+def test__get_primes__benchmark_1():
     start_time = time.perf_counter()
 
     # Run the function with a significant amount
