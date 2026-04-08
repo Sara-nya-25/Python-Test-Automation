@@ -2,12 +2,16 @@ name: 04_Linting_Benchmark CI Pipeline
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
+      - master
     # Updated path to watch for changes in the renamed folder
     paths:
       - '04_linting_benchmark/**'
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
+      - master
     paths:
       - '04_linting_benchmark/**'
 
