@@ -39,10 +39,28 @@ To run only unit tests:
     ```bash
     pytest -v -m "unit"
     ```
+To run Benchmarks
+To run the performance tests specifically:
+    ```bash
+    pytest tests/performance/ --benchmark-only
+    ```
+#### Understanding the Results
+The benchmark output provides the following metrics:
 
-### 🧹 Linting & Quality
+- **Min/Max:** The fastest and slowest execution times.
+
+- **Mean/Median:** The average time per call.
+
+- **Outliers:** Runs that were significantly slower (often due to CPU background tasks).
+
+### 🧪 Testing, Linting & Quality
 We use pylint to ensure the code follows PEP 8 standards. 
 The current project maintains a 10/10 score.
     ```bash
     pylint src/ tests/
     ```
+- Unit Tests: pytest tests/unit/
+- Coverage: pytest --cov=src
+
+### CI/CD Pipeline
+The included GitHub Actions workflow (lab4_ci.yml) automatically runs tests and linting on every push to the main or master branches.
