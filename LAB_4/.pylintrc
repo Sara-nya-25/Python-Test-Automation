@@ -1,0 +1,24 @@
+[MASTER]
+# Ignore the 'src' folder name if it's too short for Pylint's taste
+good-names=i,j,k,ex,Run,_,n,df
+init-hook='import sys; sys.path.append(".")'
+[MESSAGES CONTROL]
+# This section lets you turn off specific warnings
+disable=
+    # Often redundant in small lab projects
+    missing-module-docstring,
+    # Tests usually don't need docstrings if the name is clear
+    missing-function-docstring,
+    # Stops Pytest fixtures from causing "redefined-outer-name" errors
+    redefined-outer-name,
+    # Useful if you don't care about line length
+    line-too-long
+
+[REPORTS]
+# Set this to 'yes' if you want a big summary table, 'no' for just the score
+reports=no
+
+[FORMAT]
+# Standard Python indentation is 4 spaces
+indent-string='    '
+max-line-length=100
