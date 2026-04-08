@@ -25,6 +25,10 @@ primality and generate lists of prime numbers while maintaining high software en
     ```bash
     pip install -r requirements.txt
    ```
+3. Verify Installations:
+     ```bash
+    pytest --trace-config
+   ```
 
 ### Running Tests
 To run all tests and see output (including performance timing):
