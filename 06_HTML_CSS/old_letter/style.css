@@ -1,0 +1,74 @@
+/* Background styling */
+body {
+    background-color: #4a4a4a; /* Dark gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* The Letter itself */
+.letter {
+    background-color: #ffffff;
+    width: 500px;
+    height: 350px;
+    position: relative; /* Necessary for the absolute positioning of the stamp */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5); /* 3D shadow effect */
+    border: 10px solid transparent;
+    border-image: repeating-linear-gradient(
+                -45deg,
+                var(--red),
+                var(--red) 20px,
+                white 20px,
+                white 40px,
+                var(--blue) 40px,
+                var(--blue) 60px,
+                white 60px,
+                white 80px
+            ) 20;			
+}
+
+/* Positioning the address area based on your requirements */
+.address-area {
+    margin-left: 4em;
+    margin-top: 8em; /* Adjusted top margin to push it down below the stamp area */
+    margin-right: 2em;
+    margin-bottom: 2em;
+    
+    font-family: 'Dancing Script', cursive; /* Our Google Font */
+    font-size: 1.4em;
+}
+
+/* The Address Lines with underline effect */
+.line {
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    width: 80%; /* Adjusts the length of the line */
+}
+
+/* The Stamp */
+.stamp {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 75px;
+    background-color: #d9534f;
+    border: 2px dashed white; /* Perforated edge look */
+    outline: 2px solid #d9534f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: serif;
+    font-weight: bold;
+    transform: rotate(5deg); /* Slightly tilted for realism */
+}
+
+.stamp-inner {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 5px;
+}
