@@ -1,0 +1,4 @@
+pytest-playwright   # plugin installs python libraries and its dependencies
+playwright      # Downloads browser binaries, It reaches out to Microsoft’s servers and downloads custom-patched versions of Chromium, Firefox, and WebKit
+
+# playwright install chromium Installs only specific browsers
